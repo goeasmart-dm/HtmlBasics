@@ -1,0 +1,15 @@
+body {
+    background-image:url(img/bg.webp);
+    background-repeat: no repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+          
+h1 {text-align: center;background-color: blue;}
+
+h2 span {background-color: aqua; padding: 5px 5px;}
+
+footer {text-align: center;background-color: blueviolet;}
+
+.footerdate {display: inline-block;}
+

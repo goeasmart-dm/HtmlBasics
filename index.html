@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>All HTML Basics</title>
+
+        <link rel="icon" type="image/x-icon" href="img/favicon.png">
+        
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        
+
+    </head>
+
+    <body>
+        
+        <h1>H1 Heading</h1>
+
+        <nav>
+            <h1>Add natigation menu</h1>
+        </nav>
+
+        <h1>Github deployment test</h1>
+        
+        <!-- This is a comment -->
+        <p>This is a paragraph.</p>
+        
+        <h2><span>Link:
+        <a href="https://www.w3schools.com/html/html_links.asp">Click here to W3Schools</a>
+        </span></h2>
+        
+        <h2><span>Image:</span></h2>
+        <img src="img/banana.jpg" alt="Banana" style="width:300px;height:auto;">
+        <br>
+
+        <h2><span>Luffy's voice</span></h2>
+        <audio controls muted>
+            <source src="audio/luffy voice.mp3">
+        </audio>
+
+        <h2><span>My first YouTube Video Upload</span></h2>
+        <iframe width="918" height="479" src="https://www.youtube.com/embed/6Ti-IkZopvM" title="My First YouTube Upload" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+    </body>
+
+    <footer>
+        <p>------------ This is footer ------------</p>
+        <div>
+            <div class="footerdate">Today's date:</div>
+            
+            <div class="footerdate">
+                <div id="current-date-display"></div>        
+                <script>
+                    // Get the HTML element where the date will be displayed
+                    const dateDisplayElement = document.getElementById("current-date-display");
+
+                    // Create a new Date object to get the current date
+                    const currentDate = new Date();
+
+                    // Format the date (e.g., "Monday, October 27, 2025")
+                    const formattedDate = currentDate.toLocaleDateString('en-US', {
+                        weekday: 'long',
+                        year: 'numeric',
+                        month: 'long',
+                        day: 'numeric'
+                    });
+
+                    // Set the text content of the HTML element
+                    dateDisplayElement.textContent = formattedDate;
+                </script>
+            </div>
+        </div>
+    </footer>
+
+</html>
